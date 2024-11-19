@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced File Transfer System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Advanced File Transfer System</h1>
+        <div id="auth-section">
+            <div id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" >
+                <input type="password" id="login-password" placeholder="Password" >
+                <button onclick="login()">Login</button>
+            </div>
+
+            <div id="register-form">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button onclick="register()">Register</button>
+            </div>
+        </div>
+
+        <div id="file-section" style="display: none;">
+            <h2>File Management</h2>
+            <input type="file" id="fileUpload">
+            <button onclick="uploadFile()">Upload</button>
+            <button onclick="listFiles()">List My Files</button>
+
+            <h3>Share a File</h3>
+            <input type="text" id="share-file-name" placeholder="File Name">
+            <input type="text" id="share-recipient" placeholder="Recipient Username">
+            <button onclick="shareFile()">Share</button>
+
+            <div id="file-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

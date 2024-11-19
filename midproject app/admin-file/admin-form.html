@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Transfer System</title>
+    <link rel="stylesheet" href="admin-form.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <h3 style="color: white;">File Transfer System</h3>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+
+        <!-- Upload File Page -->
+        <div id="uploadPage" class="page-section">
+            <h2>Upload File</h2>
+            <input type="file" id="fileInput" />
+            <button onclick="uploadFile()">Upload</button>
+            <div id="uploadMessage"></div>
+        </div>
+
+        <!-- Files List Page -->
+        <div id="filesPage" class="page-section">
+            <h2>My Files</h2>
+            <ul class="listclass" id="fileList"></ul>
+        </div>
+
+        <!-- File Share Page -->
+      
+
+
+        <div id="sharePage" class="page-section">
+            <h2>Share File</h2>
+            <select  id="fileSelect" class="custom-dropdown"></select>
+            <input type="text" id="toMail" placeholder="Recipient Email" />
+            <button onclick="sendEmail()">Share</button>
+            <div id="response"></div>
+          </div>
+
+        <!-- Notifications -->
+       
+    </div>
+
+    <!-- Script Link -->
+    <script src="admin-form.js"></script>
+</body>
+</html>

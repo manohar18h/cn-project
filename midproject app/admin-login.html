@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - File Transfer System</title>
+    <link rel="stylesheet" href="login.css">
+
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <h3 style="color: white;">File Transfer System</h3>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+
+        <!-- Login Form -->
+        <div id="loginPage" class="page-section">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return loginUser(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <div id="loginMessage"></div>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Script Link -->
+    <script src="admin-file/admin-login.js"></script>
+</body>
+</html>

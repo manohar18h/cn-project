@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - File Transfer System</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <h3 style="color: white;">File Transfer System</h3>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+
+        <!-- Registration Form -->
+        <div id="registerPage" class="page-section">
+            <h2 style="margin-bottom: 15px;">Register</h2>
+            <form id="registerForm" onsubmit="return registerUser(event)">
+                <input type="text" id="email-id" placeholder="Email Id" required><br>
+                <input type="text" id="regUsername" placeholder="Username" required><br>
+                <input type="password" id="regPassword" placeholder="Password" required><br>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+                <button type="submit">Register</button>
+                <div id="registerMessage"></div>
+            </form>
+            <p style="margin-top: 15px; ">Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+        
+    </div>
+
+    <!-- Script Link -->
+    <script src="registration.js"></script>
+</body>
+</html>

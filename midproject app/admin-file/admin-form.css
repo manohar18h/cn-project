@@ -1,0 +1,117 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main content */
+.content {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Page Section */
+.page-section {
+    margin-bottom: 30px;
+}
+
+.listclass{
+    cursor: pointer;
+}
+
+.custom-dropdown {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Optional: limit the max width */
+    padding: 12px 16px; /* Add padding for a larger click area */
+    font-size: 16px; /* Increase font size */
+    border: 1px solid #ccc; /* Add border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+
+  .custom-dropdown:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Highlighted border color */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Highlight shadow */
+  }
+
+  .custom-dropdown option {
+    padding: 10px; /* Increase padding for options */
+  }
+
+/* Buttons and Inputs */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"],
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+
+/* File List */
+#fileList {
+    list-style-type: none;
+}
+
+#fileList li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fileList li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
