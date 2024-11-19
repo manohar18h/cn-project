@@ -22,7 +22,7 @@ function sendEmail(){
 
       console.log("requestbody"+ requestBody);
 
-      fetch('http://localhost:8080/documents/mail/sendWithAttachment', {
+      fetch('http://3.14.152.102:8080/documents/mail/sendWithAttachment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ function sendEmail(){
 // Function to simulate file download
 function downloadFile(fileId, filename) {
     // Simulate file download
-    window.location.href = `http://localhost:8080/documents/download/${fileId}`;
+    window.location.href = `http://3.14.152.102:8080/documents/download/${fileId}`;
 
 
     showNotification(`Downloaded file: ${filename}`);
@@ -83,7 +83,7 @@ function populateFileList(files) {
 
 // Function to fetch files from the API and populate the UI
 function fetchFiles() {
-    fetch('http://localhost:8080/documents/list')
+    fetch('http://3.14.152.102:8080/documents/list')
         .then(response => response.json())
         .then(data => {
             console.log(data);
